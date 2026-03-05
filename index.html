@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLM — Small Language Model</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>SLM</h1>
+      <p>Small Language Model by schew001 Version 0.5.5</p>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="composer" class="composer">
+      <input id="prompt" type="text" placeholder="Ask SLM about anything..." autocomplete="off" required />
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <template id="message-template">
+    <article class="message">
+      <span class="role"></span>
+      <p class="content"></p>
+    </article>
+  </template>
+
+  <script src="slm.js"></script>
+</body>
+</html>
